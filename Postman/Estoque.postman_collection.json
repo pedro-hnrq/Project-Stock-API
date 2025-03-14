@@ -1,0 +1,989 @@
+{
+	"info": {
+		"_postman_id": "832b5f41-961d-46b6-85e6-93fe41e8b335",
+		"name": "Estoque",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39682783"
+	},
+	"item": [
+		{
+			"name": "Invetory",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Lojas GameStart\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Admin ou Employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Garato Mercado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "InventoryMovement",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1/3/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 4,\r\n    \"amount\": 9,\r\n    \"type\": \"in\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Admin ou Employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Admin ou Employee",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organization",
+			"item": [
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "Admin",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Niwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTcyNTgyNjY1OCwiZXhwIjoxNzI1ODMwMjU4fQ.QwYIsh8nWTs-r6ritR5QB4p7vwp6nKYJSWecf2ZlY48",
+								"description": "Employee",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/organization/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"joao@mail.com\",\r\n    \"name\": \"Americanas\",\r\n    \"address\": \"Rua de cima\",\r\n    \"phone\": \"11 991864512\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/organization/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "Admin",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Niwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTcyNTgyNjY1OCwiZXhwIjoxNzI1ODMwMjU4fQ.QwYIsh8nWTs-r6ritR5QB4p7vwp6nKYJSWecf2ZlY48",
+								"description": "Employee",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Teste Alterado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/organization/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Niwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTcyNTgyNjY1OCwiZXhwIjoxNzI1ODMwMjU4fQ.QwYIsh8nWTs-r6ritR5QB4p7vwp6nKYJSWecf2ZlY48",
+								"description": "Employee",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/organization/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/product/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
+								"description": "Employee",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjIsImlhdCI6MTc0MTk2NDc5OSwiZXhwIjoxNzQxOTY4Mzk5fQ.6jx6fzMrpSx4KC6OQPIEM__bIg-2pZ_nReVXte0jkvc",
+								"description": "Admin",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
+								"description": "Employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Happy\",\r\n    \"description\": \"Dinosario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/product/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Alface\",\r\n    \"description\": \"Alface roxo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/product/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "admin",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MjYwMCwiZXhwIjoxNzQxOTY2MjAwfQ.yalv3OXqJUW4fqvHUP8Il2rkJXSjh2pR6SQpzRZZi4Q",
+								"description": "employee",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "admin",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MjYwMCwiZXhwIjoxNzQxOTY2MjAwfQ.yalv3OXqJUW4fqvHUP8Il2rkJXSjh2pR6SQpzRZZi4Q",
+								"description": "employee",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findInfo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MjYwMCwiZXhwIjoxNzQxOTY2MjAwfQ.yalv3OXqJUW4fqvHUP8Il2rkJXSjh2pR6SQpzRZZi4Q",
+								"description": "Employee",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "Admin",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/user/info",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "Admin",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTcyNTgyODUwMCwiZXhwIjoxNzI1ODMyMTAwfQ.hbJaiz2j3Kgd6BisY0FWOalAoTAAYgZ67sM0yeLyGFM",
+								"description": "Employee",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jose 2\",\r\n    \"email\": \"jose2@teste.com\",\r\n    \"password\": \"123\",\r\n    \"role\": \"employee\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jose2@teste.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/login/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "admin",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
+								"description": "employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ana \",\r\n    \"email\": \"ana@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/user/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMyself",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MTg5MCwiZXhwIjoxNzQxOTY1NDkwfQ.m23mPUDDmMpRae5sobb2yaIb4v6mQA5q_8O9GfoNaQM",
+								"description": "admin",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
+								"description": "employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ana \",\r\n    \"email\": \"ana@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTcyNTgyODI5NCwiZXhwIjoxNzI1ODMxODk0fQ.JaCI90LCy7r_7NF7IbUHSekBYu4dAGVtl9r13jUq5Sc",
+								"description": "Admin",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTcyNTgyODUwMCwiZXhwIjoxNzI1ODMyMTAwfQ.hbJaiz2j3Kgd6BisY0FWOalAoTAAYgZ67sM0yeLyGFM",
+								"description": "Employee",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/user/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMyself",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2MjYwMCwiZXhwIjoxNzQxOTY2MjAwfQ.yalv3OXqJUW4fqvHUP8Il2rkJXSjh2pR6SQpzRZZi4Q",
+								"description": "Employee",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
