@@ -1,0 +1,41 @@
+services:
+  db_stock:
+    image: mysql:9.2.0
+    container_name: db_stock
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: Dev.1234
+      MYSQL_DATABASE: db_stock
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: Dev.1234
+    volumes:
+      - db_stock_data:/var/lib/mysql
+    networks:
+      - stock_network
+
+  project_stock:
+    build: .
+    container_name: project_stock
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db_stock
+    environment:
+      DB_HOST: db_stock
+      DB_PORT: 3306
+      DB_USER: dev
+      DB_PASSWORD: Dev.1234
+      DB_NAME: db_stock
+    volumes:
+      - .:/app
+    networks:
+      - stock_network
+
+volumes:
+  db_stock_data:
+
+networks:
+  stock_network:
