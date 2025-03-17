@@ -1,3 +1,4 @@
+// Middleware/auth.js
 const jwt = require('jsonwebtoken')
 const user = require('../services/user')
 
@@ -12,12 +13,13 @@ function authMiddleware(role) {
            return
         }
 
-        jwt.verify(token, secretKey, async (err, decoded) => {
+        jwt.verify(token.split(' ')[1], secretKey, async (err, decoded) => {
             if(err) {
-                console.log(err)
                 res.status(400).json({ msg: 'Token inválido ou não fornecido' })
                 return
             }
+
+            // console.log("Token decodificado:", decoded);
 
             const verify = await user.Verify(decoded.id, decoded.role)
             if(!verify || (role && !role.includes(decoded.role))){

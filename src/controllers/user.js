@@ -60,6 +60,32 @@ class UserController {
         }
     }
 
+/**
+ * @swagger
+ * /login:
+ *   post:
+ *     summary: Autenticação de usuário (Administrador ou Colaborador)
+ *     tags: [Authentication]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Login'
+ *     responses:
+ *       200:
+ *         description: Token JWT
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 token:
+ *                   type: string
+ *                   example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+ *       401:
+ *         description: Credenciais inválidas
+ */
     async Login (req, res){
         try{
             const { email, password } = req.body
