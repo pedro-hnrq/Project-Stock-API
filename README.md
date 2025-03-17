@@ -6,6 +6,7 @@
 
 Antes de começar, verifique se atendeu aos seguintes requisitos:
 
+- JavaScript
 - Node.JS
 - GIT 
 - MySQL
@@ -104,6 +105,14 @@ npm run dev
 | DELETE     | `/api/v1/inventoryMovement/:id/`   | Deleta registro | SIM  | Administrador/Colaborador |
 
 
+🧩 Swagger
+
+O swagger oferece documentação interativa através:
+
+- Swagger: `http://localhost:3000/api/swagger`
+
+_Dica_: No Swagger, você pode simplesmente colar o token no campo "Authorize" sem precisar adicionar "Bearer" antes.
+
 👨🏻‍🚀 Postman
 
 Navegue até o diretório `Postman` para obter a coleção Postman, dentro do Postman no Import adicione a coleção `Estoque.postman_collection.json`. 
@@ -145,3 +154,10 @@ Estoque
     └── Delete
 
 ```
+
+#### 🐋 DOCKER
+
+1. Iniciando os Contêineres:
+    ```bash
+    docker compose up --build
+    ```

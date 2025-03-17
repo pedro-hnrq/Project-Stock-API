@@ -8,6 +8,7 @@ const InventoryRouter = require("./src/routes/inventory")
 const InventoryMovementRouter = require("./src/routes/inventoryMovement")
 const productRouter = require("./src/routes/product")
 const apiLogin = require("./src/controllers/user")
+const swaggerConfig = require("./swagger")
 
 const port = 3000
 const app = express()
@@ -23,6 +24,8 @@ app.use('/api/v1/inventory',InventoryRouter)
 app.use('/api/v1/inventoryMovement',InventoryMovementRouter)
 app.use('/api/v1/product',productRouter)
 
+swaggerConfig(app)
+
 database.db
     .sync({ force: false })
     .then(() => {
@@ -31,5 +34,5 @@ database.db
         })
     })
     .catch((e) => {
-        console.err(`Err connecting to database ${e}`)
+        console.error(`Err connecting to database ${e}`)
     })
