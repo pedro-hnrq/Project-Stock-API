@@ -25,7 +25,7 @@ git clone git@github.com:pedro-hnrq/Project-Stock-API.git
 
 Após clonar o repositório acesse o diretório
 ```
-cd Project-Car-API
+cd Project-Stock-API
 ``` 
 
 #### 🎟️ NPM
@@ -117,6 +117,8 @@ _Dica_: No Swagger, você pode simplesmente colar o token no campo "Authorize" s
 
 Navegue até o diretório `Postman` para obter a coleção Postman, dentro do Postman no Import adicione a coleção `Estoque.postman_collection.json`. 
 
+Quando gerar o Token recomenda-se colocar na pasta (Organizetion, User, Product, Inventory e InventoryMovement) na parte do Authorization na parte Auth Type = Bearer Token no campo Token.
+
 Estrutura da coleção:
 ```
 Estoque
@@ -157,7 +159,42 @@ Estoque
 
 #### 🐋 DOCKER
 
-1. Iniciando os Contêineres:
+Configurando o .env:
+1. Configurar, no diretório `src/db/database.js`para rodar o banco de dados MySQL integrado com o Projeto:
+   - Altere a variável `host` de localhost para `db_stock`.
+   
+2. Iniciando os Contêineres:
     ```bash
     docker compose up --build
+    ```
+    - Já está executando o projeto. Poderá rodar o projeto em: http://localhost:3000/api/swagger
+
+3. Parando os Contêineres:
+    ```bash
+    docker compose down
+    ```
+
+4. Iniciando o contêiner do banco de dados:
+    ```bash
+    docker compose up -d db_stock
+    ```
+
+5. Inciando o contêiner do projeto:
+    ```bash
+    docker compose up -d project_stock
+    ```
+    O contêiner do projeto só executar se o contêiner do banco de dados estiver em execução.
+
+6. Logs no contreiner do projeto:
+    ```bash
+    docker compose logs project_stock
+    ```
+    
+7. Outros comandos opcionais:
+    - Se necessário realizar o Build novamente, para criação do banco de dados no index.js, alterando de false para true:
+    ```
+    .sync({ force: true })
+    ```
+    ```bash
+    docker compose up -d --build
     ```

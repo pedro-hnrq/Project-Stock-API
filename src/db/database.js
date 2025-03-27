@@ -9,7 +9,7 @@ class Database{
             database: "db_stock",
             username: "dev",
             password: "Dev.1234",
-            host: "localhost",
+            host: "localhost", //localhost ou db_stock
             port: 3306,
             dialect: "mysql"
 
