@@ -53,7 +53,7 @@ class serviceUser{
         }
 
         if (email && email !== oldUser.email) {
-            await checkEmail(email, organizationId, transaction)
+            await checkEmail.userEmail(email, organizationId, transaction)
         }
         
         if(role && !roles.includes(role)) {
@@ -70,7 +70,14 @@ class serviceUser{
 
         await oldUser.save({ transaction })
 
-        return oldUser
+        // Retorna um objeto plano com os dados do usuário
+        return {
+            id: oldUser.id,
+            name: oldUser.name,
+            email: oldUser.email,
+            password: oldUser.password,
+            role: oldUser.role,
+        };
     }
 
     async Delete(organizationId, id, transaction) {

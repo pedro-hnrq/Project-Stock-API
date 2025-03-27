@@ -1,6 +1,5 @@
 const express = require("express")
 const database = require("./src/db/database")
-const user = require("./src/model/user")
 
 const userRouter = require("./src/routes/user")
 const organizationRouter = require("./src/routes/organization")

@@ -21,8 +21,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --watch index.js",
-    "test": "jest ./test/*",
-    "coverage": "jest test/* --coverage"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -33,5 +33,20 @@
     "sequelize": "^6.37.5",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+        "src/**/*.js",
+        "!src/model/*.js",
+        "!src/utils/checkEmail.js"
+    ],
+    "coverageReporters": [
+        "lcov",
+        "text"
+    ]
   }
 }

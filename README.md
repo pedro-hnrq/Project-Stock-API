@@ -49,6 +49,19 @@ Execute o projeto
 npm run dev
 ```
 
+#### 🧪 Teste Unitário
+
+Executar o testes - Jest
+```javascript
+npm run test
+```
+
+Cobertura de Testes - Coverage
+```javascript
+npm run coverage
+```
+
+
 #### 🧭 APIs
 
  🏢 Organization Endpoints
