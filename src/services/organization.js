@@ -1,5 +1,6 @@
 const modelOrganization = require("../model/organization");
 const generatePassword = require("../fns/generate-password");
+const checkEmail = require("../utils/checkEmail");
 const serviceUser = require("./user")
 
 class ServiceOrganization {
@@ -18,21 +19,25 @@ class ServiceOrganization {
         }else if (!phone){
             throw new Error("Phone is required")
         }
+
+        await checkEmail.organizationEmail(email, transaction);
+
         const organization = await modelOrganization.create(
             {name, address, phone, email}, {transaction})
         
         const password = generatePassword()
         const user = await serviceUser.Create(
-            organization.id, 
+            organization.id,
             `Admin ${name}`,
             email,
             password,
-            'admin',
+            "admin",
             transaction
-        )
+        );
         
-        return {organization, user: {...user.dataValues, password} }
+        return {organization, user: {...user.dataValues, password}}
     }
+
     async Update(id, name, address, phone, email, transaction) {
         const organization = await this.FindById(id, transaction)
         

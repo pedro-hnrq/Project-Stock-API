@@ -7,332 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "Invetory",
-			"item": [
-				{
-					"name": "findAll",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Employee ou Admin",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/inventory/",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventory",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "findById",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Employee ou Admin",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/inventory/3",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventory",
-								"3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Employee",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Lojas GameStart\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3000/api/v1/inventory/",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventory",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Admin ou Employee",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Garato Mercado\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3000/api/v1/inventory/2",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventory",
-								"2"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/inventory/2",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventory",
-								"2"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "InventoryMovement",
-			"item": [
-				{
-					"name": "findAll",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/inventoryMovement/1",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventoryMovement",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "findById",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/inventoryMovement/1/3/",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventoryMovement",
-								"1",
-								"3",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"productId\": 4,\r\n    \"amount\": 9,\r\n    \"type\": \"in\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3000/api/v1/inventoryMovement/3",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventoryMovement",
-								"3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Admin ou Employee",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"amount\": 3\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3000/api/v1/inventoryMovement/1/3",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventoryMovement",
-								"1",
-								"3"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Admin ou Employee",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/inventoryMovement/1/4",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"inventoryMovement",
-								"1",
-								"4"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Organization",
 			"item": [
 				{
@@ -479,174 +153,30 @@
 					},
 					"response": []
 				}
-			]
-		},
-		{
-			"name": "Product",
-			"item": [
+			],
+			"auth": {
+				"type": "bearer"
+			},
+			"event": [
 				{
-					"name": "findAll",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Employee ou Admin",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/product/",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"product",
-								""
-							]
-						}
-					},
-					"response": []
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				},
 				{
-					"name": "findById",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
-								"description": "Employee",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/product/1",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"product",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjIsImlhdCI6MTc0MTk2NDc5OSwiZXhwIjoxNzQxOTY4Mzk5fQ.6jx6fzMrpSx4KC6OQPIEM__bIg-2pZ_nReVXte0jkvc",
-								"description": "Admin",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
-								"description": "Employee",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Happy\",\r\n    \"description\": \"Dinosario\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3000/api/v1/product/",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"product",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Alface\",\r\n    \"description\": \"Alface roxo\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:3000/api/v1/product/1",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"product",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
-								"description": "Employee ou Admin",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:3000/api/v1/product/4",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"v1",
-								"product",
-								"4"
-							]
-						}
-					},
-					"response": []
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -982,6 +512,626 @@
 						}
 					},
 					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/product/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
+								"description": "Employee",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MjI0MTU1NywiZXhwIjoxNzQyMjQ1MTU3fQ.w27bj8kAlBbgbW_WVM5PVfT_5XgwVUQgvsDtq7LyRX0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwib3JnYW5pemF0aW9uSWQiOjIsImlhdCI6MTc0MTk2NDc5OSwiZXhwIjoxNzQxOTY4Mzk5fQ.6jx6fzMrpSx4KC6OQPIEM__bIg-2pZ_nReVXte0jkvc",
+								"description": "Admin",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk2Mzk3OCwiZXhwIjoxNzQxOTY3NTc4fQ.yNILkkvsD2ucVCDDIwxDTs9eznx7pTRAMTSoqPwV0CA",
+								"description": "Employee",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Happy\",\r\n    \"description\": \"Dinosario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/product/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Alface\",\r\n    \"description\": \"Alface roxo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/product/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Invetory",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Employee ou Admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MjI0MTU1NywiZXhwIjoxNzQyMjQ1MTU3fQ.w27bj8kAlBbgbW_WVM5PVfT_5XgwVUQgvsDtq7LyRX0",
+								"description": "Employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"GameStart\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Admin ou Employee",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Garato Mercado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MjI0MTU1NywiZXhwIjoxNzQyMjQ1MTU3fQ.w27bj8kAlBbgbW_WVM5PVfT_5XgwVUQgvsDtq7LyRX0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventory/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventory",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MjI0MTU1NywiZXhwIjoxNzQyMjQ1MTU3fQ.w27bj8kAlBbgbW_WVM5PVfT_5XgwVUQgvsDtq7LyRX0",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "InventoryMovement",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1/3/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MjI0MTU1NywiZXhwIjoxNzQyMjQ1MTU3fQ.w27bj8kAlBbgbW_WVM5PVfT_5XgwVUQgvsDtq7LyRX0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MjI0MTU1NywiZXhwIjoxNzQyMjQ1MTU3fQ.w27bj8kAlBbgbW_WVM5PVfT_5XgwVUQgvsDtq7LyRX0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 1,\r\n    \"amount\": 9,\r\n    \"type\": \"in\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Admin ou Employee",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MTk3MjIwMiwiZXhwIjoxNzQxOTc1ODAyfQ.dxMQcJUZcZbQTUS5RyEy94K_55Z-yqZibEuqovoWX48",
+								"description": "Admin ou Employee",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/v1/inventoryMovement/1/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"inventoryMovement",
+								"1",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImVtcGxveWVlIiwib3JnYW5pemF0aW9uSWQiOjEsImlhdCI6MTc0MjI0MTU1NywiZXhwIjoxNzQyMjQ1MTU3fQ.w27bj8kAlBbgbW_WVM5PVfT_5XgwVUQgvsDtq7LyRX0",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		}

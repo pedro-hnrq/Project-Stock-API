@@ -1,5 +1,6 @@
-
 const  modelUser = require("../model/user")
+const checkEmail = require('../utils/checkEmail')
+
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
@@ -32,6 +33,9 @@ class serviceUser{
             throw new Error("Role is required")
         }
 
+        // Verificar se o e-mail já existe
+        await checkEmail.userEmail(email, organizationId, transaction);
+
         const hashPass = await bcrypt.hash(password, salt)
 
         return modelUser.create(
@@ -46,6 +50,10 @@ class serviceUser{
         const oldUser = await this.FindById(organizationId, id, transaction)
         if(!oldUser) {
             throw new Error("Usuário não encontrado")
+        }
+
+        if (email && email !== oldUser.email) {
+            await checkEmail.userEmail(email, organizationId, transaction)
         }
         
         if(role && !roles.includes(role)) {
@@ -62,7 +70,14 @@ class serviceUser{
 
         await oldUser.save({ transaction })
 
-        return oldUser
+        // Retorna um objeto plano com os dados do usuário
+        return {
+            id: oldUser.id,
+            name: oldUser.name,
+            email: oldUser.email,
+            password: oldUser.password,
+            role: oldUser.role,
+        };
     }
 
     async Delete(organizationId, id, transaction) {

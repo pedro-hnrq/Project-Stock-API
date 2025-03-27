@@ -1,5 +1,10 @@
 const serviceOrganization = require("../services/organization")
 
+function handleError(res, error) {
+    const statusCode = error.statusCode || 500;
+    res.status(statusCode).send({ msg: error.message });
+}
+
 class OrganizationController {
     async FindById (req, res){
         try{
@@ -8,7 +13,7 @@ class OrganizationController {
             res.status(200).send(organization)
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
     async Create (req, res){
@@ -19,7 +24,7 @@ class OrganizationController {
             res.status(200).send({ organization })
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
     async Update (req, res){
@@ -31,7 +36,7 @@ class OrganizationController {
             res.status(200).send({ organization })
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }        
     }
     async Delete (req, res){
@@ -42,7 +47,7 @@ class OrganizationController {
             res.status(204).send(organization)
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
 }

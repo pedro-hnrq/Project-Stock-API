@@ -1,5 +1,10 @@
 const serviceUser = require("../services/user")
 
+function handleError(res, error) {
+    const statusCode = error.statusCode || 500; 
+    res.status(statusCode).send({ msg: error.message });
+}
+
 class UserController {
     async FindAll (req, res){
         try{
@@ -8,7 +13,7 @@ class UserController {
             res.status(200).send(users)
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
     async FindById (req, res){
@@ -19,7 +24,7 @@ class UserController {
             res.status(200).send({ user })
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
     async Create (req, res){
@@ -31,9 +36,10 @@ class UserController {
             res.status(201).send({ user })
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
+
     async Update (req, res){
         try{
             const organizationId = req.session.organizationId
@@ -43,9 +49,9 @@ class UserController {
 
             res.status(200).send({ user })
         }
-        catch(error){
-            res.status(500).send({msg: error.message})
-        }        
+        catch(error){            
+            handleError(res, error);
+        }     
     }
 
     async Delete (req, res){
@@ -56,7 +62,7 @@ class UserController {
 
             res.status(204).send({ user })
         } catch (error) {
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
 
@@ -93,7 +99,7 @@ class UserController {
             res.status(200).send({ token })
         }
         catch(error){
-            res.status(500).send({msg: error.message})
+            handleError(res, error);
         }
     }
 }

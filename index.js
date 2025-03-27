@@ -1,6 +1,5 @@
 const express = require("express")
 const database = require("./src/db/database")
-const user = require("./src/model/user")
 
 const userRouter = require("./src/routes/user")
 const organizationRouter = require("./src/routes/organization")
@@ -34,5 +33,5 @@ database.db
         })
     })
     .catch((e) => {
-        console.error(`Err connecting to database ${e}`)
+        console.err(`Err connecting to database ${e}`)
     })
